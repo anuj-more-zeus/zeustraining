@@ -10,7 +10,7 @@
     <h1>My first web page</h1>
     <h2>What this is</h2>
 
-    Welcome to <i>my first webpage.</i> I created this webpage without the assistance of a webpage editor. Just my little text editor and a keen <b>understanding of html.</b>
+    Welcome to <i>my first webpage.</i> I created this webpage without the assistance of a webpage editor. Just my little text editor and a keen <b><i>UNDERSTANDING OF HTML.</i></b>
 
     <h2>Why this is</h2>
 
@@ -33,7 +33,7 @@
     <h2>On click of following image navigate to Google.com</h2>
 
     <a href="https://www.google.com">
-        <img src="./google.png" alt="google logo" height="50px">
+        <img src="./google.jpg" alt="google logo" height="150px">
     </a>
 
     <h3>Some random table</h3>
@@ -60,21 +60,21 @@
 
     <b><i>NOTE: </i></b> It looks like the part, but won't do anything.
 
-    <form action="">
+    <form id="submit" action="" onsubmit="return validateForm()">
 
 
         <p>Name:</p>
 
-        <input id="name" type="text" placeholder="Your name" required>
+        <input id="name" type="text" placeholder="Your name">
 
         <p>Comments:</p>
 
-        <textarea id="comments" placeholder="Your comments" required></textarea>
+        <textarea id="comments" placeholder="Your comments"></textarea>
 
         <p>Are you:</p>
 
         <p>
-            <input type="radio" name="sex" required>Male</input>
+            <input type="radio" name="sex">Male</input>
         </p>
         
         <p>
@@ -88,6 +88,7 @@
 
     </form>
         
+    <script src="index.js"></script>
     
 </body>
 </html>
